@@ -1,0 +1,300 @@
+body {
+    background-color: #000000;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linktree-container {
+    max-width: 680px;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.profile-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.bio {
+    font-size: 1.1rem;
+    color: #89d6fb;
+    margin: 0;
+}
+
+.section-header {
+    color: #89d6fb;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 30px 0 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.links-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.link-button {
+    background-color: #1a1a1a;
+    color: white;
+    text-decoration: none;
+    padding: 16px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    border: 1px solid #333;
+}
+
+.link-button:hover {
+    background-color: #2a2a2a;
+    transform: translateY(-2px);
+    border-color: #89d6fb;
+    color: #89d6fb;
+}
+
+.link-icon {
+    margin-right: 12px;
+    font-size: 1.2rem;
+    width: 24px;
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #89d6fb;
+}
+
+@media (max-width: 480px) {
+    .linktree-container {
+        padding: 16px;
+    }
+    
+    .profile-section h1 {
+        font-size: 2rem;
+    }
+    
+    .bio {
+        font-size: 1rem;
+    }
+    
+    .link-button {
+        padding: 14px 16px;
+    }
+}
+
+.container {
+    padding: 12px;   
+    margin: 0px;
+}
+
+ul li { padding: 5px 0px; }
+
+.highlight {
+	color: #89d6fb
+}
+
+div.border {
+    border-style: dashed;
+    padding: 5px;
+}
+.quiz,
+.choices {
+    list-style-type: none;
+    padding: 0;
+}
+.choices li {
+    margin-bottom: 5px;
+}
+.choices label {
+    display: flex;
+    align-items: center;
+}
+.choices label,
+input[type="radio"] {
+    cursor: pointer;
+}
+input[type="radio"] {
+    margin-right: 8px;
+}
+.view-results {
+    padding: 1rem;
+    cursor: pointer;
+    font-size: inherit;
+    color: white;
+    background: grey;
+    border-radius: 8px;
+    margin-right: 5px;
+}
+.my-results {
+    padding: 1rem;
+}
+
+a:link {color: #89d6fb; background-color: transparent; text-decoration: none;}
+a:visited {color: #89d6fb; background-color: transparent; text-decoration: none;}
+a:hover {color: #89d6fb; background-color: transparent; text-decoration: underline;}
+a:active {color: #89d6fb; background-color: transparent; text-decoration: underline;}
+
+a.activepage:link {color: white; background-color: transparent; text-decoration: none;}
+a.activepage:visited {color: white; background-color: transparent; text-decoration: none;}
+a.activepage:hover {color: white; background-color: transparent; text-decoration: underline;}
+a.activepage:active {color: white; background-color: transparent; text-decoration: underline;}
+
+
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframe-container iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    padding-bottom: 20px;
+  }
+  
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+
+.back-link {
+    color: #89d6fb;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.back-link:hover {
+    color: white;
+}
+
+.content-section {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.content-section h5 {
+    color: #89d6fb;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.content-section h5:first-child {
+    margin-top: 0;
+}
+
+.content-section dl {
+    margin: 0;
+    padding: 0;
+}
+
+.content-section dl li {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #444;
+}
+
+.content-section dl li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.content-section li {
+    padding: 8px 0;
+    border-bottom: 1px solid #333;
+}
+
+.content-section li:last-child {
+    border-bottom: none;
+}
+

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My Projects | David Lau</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="linktree-container">
+            <div class="profile-section">
+                <h1>My Projects</h1>
+                <a href="index.html" class="back-link"><i class="fa fa-arrow-left"></i> Back to Home</a>
+            </div>
+
+            <div class="container">
+                <div class="content-section">
+                    <dl>
+                        <dt>My Flashcards</dt>
+                        <dd>
+                            <p>Memorizing GRE vocabs anywhere.</p>
+                            <a href="https://dl512.github.io/flashcard/" target="_blank" rel="noopener noreferrer">Link</a>
+                        </dd>
+                    </dl>
+
+                    <dl>
+                        <dt>Online Dice</dt>
+                        <dd>
+                            <p>In case you need some dices for drinking games.</p>
+                            <a href="https://dl512.github.io/online-dice/" target="_blank" rel="noopener noreferrer">Link</a>
+                        </dd>
+                    </dl>
+
+                    <dl>
+                        <dt>Which is the best starting hand in poker (Texas Hold'em and Omaha)? Addressing the question with Python</dt>
+                        <dd>
+                            <p>Analyzing starting hands for <span class="highlight">Texas Hold'em</span> and <span class="highlight">Omaha</span>.</p>
+                            <a href="https://medium.com/@dl512/which-is-the-best-starting-hand-in-poker-texas-holdem-and-omaha-765998afd353" target="_blank" rel="noopener noreferrer">Blog</a>
+                            |
+                            <a href="https://github.com/dl512/analyzing-poker-starting-hands/blob/main/poker-hand-ranking.ipynb" target="_blank" rel="noopener noreferrer">Code</a>
+                        </dd>
+                    </dl>
+
+                    <dl>
+                        <dt>Generating Prospectus Texts Using N-Grams</dt>
+                        <dd>
+                            <p>Trying to generate some text using <span class="highlight">N-Grams</span>.</p>
+                            <a href="https://medium.com/@dl512/generating-prospectus-texts-using-n-grams-6b1b35f6b238" target="_blank" rel="noopener noreferrer">Blog</a>
+                            |
+                            <a href="https://github.com/dl512/prospectus_text_generation" target="_blank" rel="noopener noreferrer">Code</a>
+                        </dd>
+                    </dl>
+
+                    <dl>
+                        <dt>Analyzing the impacts of press releases to stock prices and trading volume</dt>
+                        <dd>
+                            <p>By analyzing 1,432 press releases form 10 companies, <span class="highlight"> it is shown that results announcements increase stock prices volatility and trading volume by 102% and 120% respectively on the trading day right after the announcement. While stock prices volatility quickly drops after the first day, trading volume remains at a level 25–30% above average within the next 3 to 5 days after the announcements. </span> This provides a useful guidance to companies if are considering a stock or debt offering, when they need a combination of high trading volume and low stock price volatility. For the press releases other than results announcements, the impact to either stock price and trading volume is insignificant. I also tried to use a Naïve Bayes model to classify whether a press release would create significant impact, and the result is unsatisfactory (accuracy score: 0.61).</p>
+                            <p>Libraries used: Beautiful Soup, NLTK, RegEx, Scikit-learn, Pandas, NumPy, Matplotlib</p>
+                            <a href="https://medium.com/@dl512/analyzing-the-impacts-of-press-releases-to-stock-prices-and-trading-volume-102d906c5957" target="_blank" rel="noopener noreferrer">Blog</a>
+                            |
+                            <a href="https://github.com/dl512/analyzing_press_releases/tree/main" target="_blank" rel="noopener noreferrer">Code</a>
+                        </dd>
+                    </dl>
+    
+                    <dl>
+                        <dt>Analyzing Valuation Discrepancies between Chinese Listed Companies and their US Peers</dt>
+                        <dd>
+                            <p>Conducted an analysis to determine whether there are any valuation discrepancies between Chinese listed companies and their US peers. Raw financial and trading data of 500 US-listed and 200 Chinese-listed companies over the past 5 years were obtained from the Python yfinance library. Parameters were chosen based on P-value threshold. A neural network model was trained which achieved a R2 score of 0.69 for the validation set, after trying and testing different hyperparameters including number of hidden layers, layer sizes, regularization, etc. <span class="highlight"> Results from the analysis found that 80% of the top 200 Chinese listed companies were traded at a discount relative to their US peers with an average discount rate of 35%. Such discount was a mere 2% two years ago. </span> This indicates that investors may have taken geopolitical factors into consideration and Chinese stocks are not favored. <span class="highlight"> A negative correlation between the size of a company and its discount is also observed. </span></p>
+                            <p>Libraries used: TensorFlow, Scikit-learn, Pandas, NumPy, Matplotlib</p>
+                            <a href="https://medium.com/@dl512/analyzing-valuation-discrepancies-are-chinese-listed-companies-trading-at-a-discount-to-their-us-b67b8f5b7fd7" target="_blank" rel="noopener noreferrer">Blog</a>
+                            |
+                            <a href="https://github.com/dl512/analyze_china_discount" target="_blank" rel="noopener noreferrer">Code</a>
+                        </dd>
+                    </dl>
+    
+                    <dl>
+                        <dt>Guessing the missing youth unemployment data from China using a very quick and dirty linear regression model</dt>
+                        <dd>
+                            <p>After the youth unemployment rate reached a staggering 21.3% in June 2023, the Chinese government made the decision to discontinue the publication of such data from July 2023. However, other economic data continues to be regularly released, and it is reasonable to assume a close correlation among most economic indicators. Utilizing a simple Linear Regression model, I compared the last-3-year youth unemployment data against 8 other macroeconomic data, generating a model with R2 score of 71%. <span class="highlight"> The model estimates China's July 2023 youth unemployment rate to be around 19%. </span></p>
+                            <p>Libraries used: Scikit-learn, Pandas, NumPy, Matplotlib</p>
+                            <a href="https://medium.com/@dl512/guessing-the-missing-youth-unemployment-data-from-china-using-a-very-quick-and-dirty-linear-3fb66840e318" target="_blank" rel="noopener noreferrer">Blog</a>
+                            |
+                            <a href="https://github.com/dl512/china_missting_youth_UE_number" target="_blank" rel="noopener noreferrer">Code</a>
+                        </dd>
+                    </dl>
+
+                    <dl>
+                        <dt>Your Pocket Flashcards</dt>
+                        <dd>
+                            <p>The project "Your Pocket Flashcards" was inspired by the struggle of non-English speakers to remember vocabulary words. The goal was to create a solution that allows users to quickly check word meanings and jot them down, even when they are outside. The website has a dynamic structure and interacts with a database to provide personalized outputs. Users need to register and log in to access the main page, where they can search for word meanings in a dictionary or record words for future revision. The word list can be sorted, and words can also be deleted. The project includes several code components, such as the main Python code (with Flask framework) for website functionality, an SQL database for storing user information and word data, and HTML pages for website layout. The search feature utilizes the Free Dictionary API for comprehensive word details.</p>
+                            <div class="iframe-container">
+                                <iframe width="950" height="491" src="https://www.youtube.com/embed/eVgRtBPoL0k" title="[2023] CS50 Final Project: Your Pocket Flashcards" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </dd>
+                    </dl>
+
+                    <dl>
+                        <dt>Evaluating Craps Strategies with Python</dt>
+                        <dd>
+                            <p>I explore various betting options in the game of craps and analyze strategies to minimize the house edge. I begin by discussing the average number of rolls before hitting a "7" and the weighted average, which is around 5 rolls. Next, I examine place bets and find that betting on 6 or 8 offers the lowest house edge. The pass line bet is then evaluated, which has a high house edge but can be offset by placing an odds bet. The odds bet is the only fair game in the casino, and combining it with the pass line bet becomes an attractive strategy if the odds bet multiple is 4x or above. Simulations confirm the relationship between the odds bet multiple and the rate of decrease in the total amount. It's important to make informed decisions and consider responsible gambling practices when playing craps.</p>
+                            <a href="https://medium.com/@dl512/evaluating-craps-strategies-with-python-bea85ab42528" target="_blank" rel="noopener noreferrer">Blog</a>
+                        </dd>
+                    </dl>
+
+                    <dl>
+                        <dt>Creating very simple game (or not so simple) using Scratch, a block-based programming language developed by MIT</dt>
+                        <dd>
+                            <p>This is the homework assignment of Harvard's CS50 online course. Just found this interesting.</p>
+                            <a href="https://medium.com/@dl512/creating-very-simple-game-or-not-so-simple-using-scratch-a-block-based-programming-language-b5c3d3fb79ec" target="_blank" rel="noopener noreferrer">Blog</a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
