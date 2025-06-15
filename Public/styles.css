@@ -266,6 +266,9 @@ a.activepage:active {color: white; background-color: transparent; text-decoratio
     color: #89d6fb;
     margin-top: 30px;
     margin-bottom: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    width: 100%;
 }
 
 .content-section h5:first-child {
@@ -275,18 +278,59 @@ a.activepage:active {color: white; background-color: transparent; text-decoratio
 .content-section dl {
     margin: 0;
     padding: 0;
+    border-bottom: 1px solid #999;
 }
 
-.content-section dl li {
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #444;
-}
-
-.content-section dl li:last-child {
+.content-section dl:last-child {
     border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
+}
+
+.content-section dl dt {
+    color: #89d6fb;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    padding-top: 20px;
+}
+
+.content-section dl dd {
+    margin: 0 0 25px 0;
+    padding-bottom: 25px;
+}
+
+.content-section dl dd p {
+    margin: 0 0 15px 0;
+    line-height: 1.6;
+}
+
+.content-section dl dd a {
+    color: #89d6fb;
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+.content-section dl dd a:hover {
+    color: white;
+}
+
+.content-section .iframe-container {
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+}
+
+.content-section .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.content-section .highlight {
+    color: #89d6fb;
 }
 
 .content-section li {
