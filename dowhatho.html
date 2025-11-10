@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Do What Ho | XPLORE Hong Kong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {
+                background-color: #000000;
+                color: white;
+                font-family: "Roboto", sans-serif;
+                margin: 0;
+                padding: 40px 0;
+            }
+
+            .dowhatho-container {
+                max-width: 960px;
+                margin: 0 auto;
+                padding: 0 24px 80px;
+            }
+
+            .hero-section {
+                text-align: center;
+                padding: 60px 20px;
+                background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+                border-radius: 16px;
+                margin-bottom: 40px;
+                border: 1px solid #333;
+            }
+
+            .hero-title {
+                font-size: 3rem;
+                font-weight: 700;
+                margin-bottom: 20px;
+                color: white;
+            }
+
+            .hero-subtitle {
+                font-size: 1.3rem;
+                color: #89d6fb;
+                margin-bottom: 30px;
+                line-height: 1.6;
+            }
+
+            .hero-actions {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 16px;
+                margin-top: 20px;
+            }
+
+            .section-card {
+                background-color: #111111;
+                border-radius: 16px;
+                padding: 32px;
+                margin-bottom: 32px;
+                border: 1px solid #2f2f2f;
+            }
+
+            .section-card h2 {
+                color: #89d6fb;
+                font-size: 1.6rem;
+                margin-bottom: 16px;
+                text-transform: uppercase;
+                letter-spacing: 0.16em;
+            }
+
+            .section-card p {
+                color: #d1d1d1;
+                line-height: 1.7;
+                margin-bottom: 16px;
+            }
+
+            .feature-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+                gap: 24px;
+                margin-top: 16px;
+            }
+
+            .feature-item {
+                background-color: #161616;
+                border-radius: 12px;
+                padding: 24px;
+                border: 1px solid #333;
+                text-align: left;
+                transition: all 0.3s ease;
+            }
+
+            .feature-item:hover {
+                border-color: #89d6fb;
+                transform: translateY(-3px);
+                box-shadow: 0 12px 32px rgba(137, 214, 251, 0.08);
+            }
+
+            .feature-icon {
+                font-size: 2rem;
+                color: #89d6fb;
+                margin-bottom: 16px;
+            }
+
+            .feature-title {
+                color: white;
+                font-weight: 600;
+                margin-bottom: 10px;
+                font-size: 1.2rem;
+            }
+
+            .feature-description {
+                color: #c6c6c6;
+                line-height: 1.6;
+            }
+
+            .cta-button {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                background-color: #89d6fb;
+                color: #000;
+                padding: 14px 28px;
+                text-decoration: none;
+                border-radius: 10px;
+                font-weight: 600;
+                font-size: 1.05rem;
+                transition: all 0.3s ease;
+                border: none;
+            }
+
+            .cta-button:hover {
+                background-color: #5bc0de;
+                color: #000;
+                transform: translateY(-2px);
+                box-shadow: 0 6px 16px rgba(137, 214, 251, 0.25);
+            }
+
+            .secondary-button {
+                background-color: transparent;
+                color: #89d6fb;
+                border: 2px solid #89d6fb;
+            }
+
+            .secondary-button:hover {
+                background-color: #89d6fb;
+                color: #000;
+            }
+
+            .hashtag {
+                display: inline-block;
+                background-color: #1a1a1a;
+                color: #89d6fb;
+                border: 1px solid #333;
+                border-radius: 50px;
+                padding: 10px 18px;
+                margin: 6px;
+                font-weight: 500;
+                letter-spacing: 0.08em;
+            }
+
+            .footer-note {
+                text-align: center;
+                color: #7f7f7f;
+                margin-top: 40px;
+                font-size: 0.9rem;
+            }
+
+            @media (max-width: 768px) {
+                body {
+                    padding: 24px 0;
+                }
+
+                .hero-title {
+                    font-size: 2.4rem;
+                }
+
+                .hero-subtitle {
+                    font-size: 1.1rem;
+                }
+
+                .section-card {
+                    padding: 24px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="dowhatho-container">
+            <div class="hero-section">
+                <h1 class="hero-title">Do What Ho</h1>
+                <p class="hero-subtitle">Discover the hidden gems and exciting adventures that Hong Kong has to offer. Curated experiences, offbeat trails, and local insights from the XPLORE Hong Kong community.</p>
+                <div class="hero-actions">
+                    <a href="https://www.xplorehk.com" target="_blank" rel="noopener noreferrer" class="cta-button">
+                        <i class="fa fa-globe"></i> Visit XPLORE HK
+                    </a>
+                    <a href="https://www.instagram.com/xplore.hk/" target="_blank" rel="noopener noreferrer" class="cta-button secondary-button">
+                        <i class="fa fa-instagram"></i> Follow @xplore.hk
+                    </a>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>About Do What Ho</h2>
+                <p>"Do What Ho" is your ultimate guide to exploring Hong Kong beyond the tourist trails. We uncover the city's best-kept secrets, from hidden cafes and local markets to breathtaking hiking trails and cultural experiences.</p>
+                <p>Whether you're a local looking for new adventures or a visitor wanting to experience the real Hong Kong, we've got you covered with authentic recommendations and insider tips.</p>
+            </div>
+
+            <div class="section-card">
+                <h2>What You'll Find</h2>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fa fa-camera"></i></div>
+                        <div class="feature-title">Photography Trails</div>
+                        <div class="feature-description">Capture Hong Kong's most photogenic spots, from iconic skyline views to hidden street art and everyday stories.</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fa fa-utensils"></i></div>
+                        <div class="feature-title">Local Cuisine</div>
+                        <div class="feature-description">Discover authentic flavours at neighbourhood eateries, dai pai dongs, and modern takes on classic dishes.</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fa fa-mountain"></i></div>
+                        <div class="feature-title">Hiking & Outdoors</div>
+                        <div class="feature-description">Explore Hong Kong's mountains and coastlines with curated routes for sunrise seekers, trail runners, and weekend wanderers.</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fa fa-building"></i></div>
+                        <div class="feature-title">Urban Discovery</div>
+                        <div class="feature-description">Immerse yourself in Hong Kong's neighbourhoods, markets, and cultural pockets that tell the city's evolving story.</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fa fa-coffee"></i></div>
+                        <div class="feature-title">Hidden Cafés</div>
+                        <div class="feature-description">Find cafes and creative spaces perfect for slow afternoons, remote work sessions, and conversations with friends.</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fa fa-palette"></i></div>
+                        <div class="feature-title">Art & Culture</div>
+                        <div class="feature-description">Follow art walks, pop-up galleries, and cultural events that celebrate Hong Kong's creative community.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-card">
+                <h2>Stay Connected</h2>
+                <p>Follow along for daily inspiration, behind-the-scenes content, and real-time updates on the best experiences in Hong Kong. Share your own adventures with our hashtags and become part of the XPLORE HK community.</p>
+                <div style="text-align: center; margin: 24px 0;">
+                    <span class="hashtag">#DoWhatHo</span>
+                    <span class="hashtag">#XPLOREHK</span>
+                    <span class="hashtag">#HongKongHiddenGems</span>
+                </div>
+                <div style="text-align: center;">
+                    <a href="https://www.instagram.com/xplore.hk/" target="_blank" rel="noopener noreferrer" class="cta-button">
+                        <i class="fa fa-instagram"></i> Follow @xplore.hk
+                    </a>
+                    <a href="https://www.xplorehk.com" target="_blank" rel="noopener noreferrer" class="cta-button secondary-button">
+                        <i class="fa fa-external-link"></i> Visit XPLORE HK
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-note">
+                © XPLORE Hong Kong — curated adventures for curious explorers.
+            </div>
+        </div>
+    </body>
+</html>
