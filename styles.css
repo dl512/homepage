@@ -70,6 +70,17 @@ body {
     color: #89d6fb;
 }
 
+.contact-link:hover {
+    background-color: #ffffff;
+    color: #111111;
+    border-color: #ffffff;
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
+}
+
+.contact-link:hover .link-icon {
+    color: #111111;
+}
+
 .link-icon {
     margin-right: 12px;
     font-size: 1.2rem;
